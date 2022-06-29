@@ -10,7 +10,6 @@ Shader "Custom/moeda"
         _ColorBack ("ColorBack", Color) = (1,1,0,1)
         _MainTex ("Albedo", 2D) = "white" {}
         _CoinTex ("CoinText", 2D) = "white" {}
-        _rotationSpeed ("rotationSpeed", Range (1, 10)) = 5
         _coinPosition("coinPosition", Range (-1, 5)) = 1
 
         [Toggle(USE_TEXTURE)] _UseTextureEmptyUp("Remove Up", Float) = 0
@@ -43,7 +42,6 @@ Shader "Custom/moeda"
         float _UseTextureCoin;
         float _UseTextureCoinRotate;
 
-        float _rotationSpeed;
         float _coinPosition;
 
         struct Input {
